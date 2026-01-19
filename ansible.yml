@@ -4,6 +4,7 @@ ansiblePlaybook:
   tasks:
     name: "install ngnix"
     apt:
-      name: ngnix
-      state: "present"
-      update_cache: true
+      - name: ngnix
+        state: "present"
+        update_cache: true
+      - name: start ngnix
