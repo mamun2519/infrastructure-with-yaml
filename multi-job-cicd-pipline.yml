@@ -13,3 +13,19 @@ jobs:
         users: npm install
       - name: build the code
         users: npm run build
+  test:
+    needs:
+      - build
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout code
+        users: "actions/checkout@v4"
+      - name: test the code
+        users: "npm test"
+  deploy:
+    needs:
+      - test
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Test Command run
+        run: echo Deploying to production server..
