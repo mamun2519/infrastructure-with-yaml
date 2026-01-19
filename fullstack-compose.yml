@@ -1,1 +1,4 @@
 version: "4.00"
+services:
+  backend:
+    image: "/medmonchey/backend:latest"
