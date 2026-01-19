@@ -22,7 +22,9 @@ services:
     retries: 3
   frontend:
     images: "medmonchy/frontend:latest"
-    ports: 
-      -  "3000:3000"
+    ports:
+      - "3000:3000"
     environment:
-      BACKEND_URL: "http://localhost:5000
+      BACKEND_URL: "http://localhost:5000"
+    networks:
+      - app_net
