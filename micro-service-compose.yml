@@ -7,3 +7,4 @@ services:
     environment:
       DB_HOST: "postgres"
       DB_USER: "admin"
+      DB_PASS: "secret"
