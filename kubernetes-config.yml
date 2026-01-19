@@ -2,3 +2,8 @@ apiVersion: "apps/v1"
 kind: development
 metadata:
   name: medmoncharcy-development
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "nginx"
