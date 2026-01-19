@@ -20,3 +20,6 @@ services:
     environment:
       POSTGRES_DB: "appdb"
       POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "secret"
+    volumes:
+      - "pg_data:/var/lib/postgresql/data"
