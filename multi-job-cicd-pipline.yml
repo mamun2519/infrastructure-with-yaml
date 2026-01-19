@@ -3,3 +3,13 @@ on:
   push:
     branch:
       - main
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: checkout code
+        users: "actions/checkout@v4"
+      - name: install dependanchy
+        users: npm install
+      - name: build the code
+        users: npm run build
