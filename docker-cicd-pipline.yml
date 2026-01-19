@@ -1,1 +1,9 @@
 name: Deploy Medmonchy with Docker CI/CD
+on:
+  push:
+    branch:
+      - main
+      - staging
+jobs:
+  docker-build-and-push:
+    runs-on: "ubuntu-latest"
