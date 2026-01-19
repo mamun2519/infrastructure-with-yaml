@@ -8,3 +8,7 @@ ansiblePlaybook:
         state: "present"
         update_cache: true
       - name: start ngnix
+      - service:
+          name: nginx
+          state: started
+          enabled: true
