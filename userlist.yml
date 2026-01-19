@@ -5,3 +5,4 @@ users:
       - write
       - delete
     active: true
+  - username: guest
