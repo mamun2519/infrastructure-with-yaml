@@ -12,3 +12,8 @@ pipeline:
 
     deploy:
       runsOn: ubuntu-latest
+      only:
+        - main
+      steps:
+        - scp build.zip server:/var/www
+        - ssh server restart-app
