@@ -6,3 +6,6 @@ users:
       - delete
     active: true
   - username: guest
+    roles:
+      - read
+    active: false
