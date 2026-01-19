@@ -15,3 +15,8 @@ services:
     command: npm run start
     depends_on:
       - api
+  postgres:
+    images: postgres:15
+    environment:
+      POSTGRES_DB: "appdb"
+      POSTGRES_USER: "admin"
