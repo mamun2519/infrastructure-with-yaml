@@ -10,3 +10,9 @@ jobs:
     steps:
       - name: checkout code
         uses: "actions/checkout@v4"
+      - name: "Setup Node Version"
+        users: "actions/setup-node@v4"
+        with:
+          node-version: "18"
+      - run: npm install
+      - run: "npm run test"
