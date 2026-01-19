@@ -2,3 +2,11 @@ app:
   name: medmoncharcy
   env: production
   version: 2.1.0
+  loggin:
+    level: info
+    format: json
+server:
+  host: "0.0.0.0.0"
+  ports:
+    - 40
+    - 44
