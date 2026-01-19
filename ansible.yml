@@ -6,3 +6,4 @@ ansiblePlaybook:
     apt:
       name: ngnix
       state: "present"
+      update_cache: true
