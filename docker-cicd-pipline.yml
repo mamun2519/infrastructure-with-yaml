@@ -17,3 +17,7 @@ jobs:
           password: "${{ secrets.DOCKER_PASSWORD }}"
       - name: Docker build and push
         uses: "docker/build-push-action@v5"
+        with:
+          context: "."
+          push: true
+          tags: "medmonchy/app:latest"
