@@ -8,3 +8,5 @@ services:
       DB_HOST: "postgres"
       DB_USER: "admin"
       DB_PASS: "secret"
+    depends_on:
+      - postgres
