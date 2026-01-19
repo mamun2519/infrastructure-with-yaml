@@ -1,2 +1,6 @@
 users:
   - username: admin
+    roles:
+      - read
+      - write
+      - delete
