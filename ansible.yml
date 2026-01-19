@@ -1,2 +1,8 @@
 ansiblePlaybook:
   hosts: webservers
+  become: true
+  tasks:
+    name: "install ngnix"
+    apt:
+      name: ngnix
+      state: "present"
