@@ -14,3 +14,4 @@ services:
       REDIS_HOST: "redis"
     depends_on:
       - redis
+    restart: always
