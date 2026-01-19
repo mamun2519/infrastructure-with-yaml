@@ -4,3 +4,4 @@ users:
       - read
       - write
       - delete
+    active: true
