@@ -9,3 +9,6 @@ pipeline:
       steps:
         - npm install
           npm run build
+
+    deploy:
+      runsOn: ubuntu-latest
