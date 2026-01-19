@@ -1,0 +1,5 @@
+name: "Medmonchy CI CD Deployment"
+on:
+  push:
+    branch:
+      - main
