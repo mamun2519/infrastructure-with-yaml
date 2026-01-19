@@ -28,3 +28,7 @@ services:
       BACKEND_URL: "http://localhost:5000"
     networks:
       - app_net
+
+networks:
+  app_net:
+    driver: bridge
