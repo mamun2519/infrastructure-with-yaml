@@ -1,0 +1,11 @@
+pipeline:
+  stages:
+    - build
+      test
+      deploy
+  jobs:
+    build:
+      runsOn: ubuntu-latest
+      steps:
+        - npm install
+          npm run build
