@@ -6,3 +6,14 @@ services:
       - 3000:3000
     network:
       - app_net
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+  healthCheck:
+    test:
+      - "CMD"
+      - "curl"
+      - "-f"
+      - "http://localhost:3000/health"
