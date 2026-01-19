@@ -1,0 +1,14 @@
+name: Deploy To VPS
+on:
+  push:
+    branch:
+      - main
+jobs:
+  runs-on: "ubuntu-latest"
+  steps:
+    - name: Checkout The code
+      uses: "actions/checkout@v4"
+    - name: Deploy To SSH
+      uses: "appleboy/ssh-action@v1.0.0"
+      with:
+        host: "${{ secrets.SERVER_IP }}
