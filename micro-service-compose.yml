@@ -10,3 +10,8 @@ services:
       DB_PASS: "secret"
     depends_on:
       - postgres
+  worker:
+    build: "/worker"
+    command: npm run start
+    depends_on:
+      - api
