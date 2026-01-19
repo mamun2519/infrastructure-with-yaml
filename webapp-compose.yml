@@ -28,3 +28,6 @@ services:
       - "./nginx.conf:/etc/nginx/nginx.conf"
     depends_on:
       - api
+
+volumes:
+  redis_data: {}
